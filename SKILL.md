@@ -32,6 +32,16 @@ Nếu task không ghi `repo` → dừng, hỏi Giang/founder repo nào.
 sửa tối thiểu, bám convention → tự kiểm (test/lint, migration idempotent) →
 mở PR mô tả đủ → trả link PR.
 
+## BÁO CÁO CHO GIANG & VÒNG QC (loop trên board)
+- Khi xong: ngoài mở PR, TRẢ cho Giang một report NGẮN có cấu trúc — (1) đã làm gì,
+  (2) PR link, (3) cách test, (4) rủi ro. Giang ghi report này vào thread trên board
+  (`extra.thread`) cho founder soi; bạn KHÔNG cần đụng board.
+- Nếu Giang giao lại task kèm ghi chú QC của Quân (task quay vòng vì fail): đọc kỹ
+  lỗi Quân nêu, sửa TỐI THIỂU đúng chỗ đó, cập nhật CÙNG PR (không mở PR mới), rồi
+  trả report `fix` ngắn (đã sửa gì).
+- Vòng QC có trần (mặc định 3). Nếu sau vài vòng vẫn bế tắc / bất đồng cách xử lý,
+  nói rõ trong report để Giang escalate founder — đừng vá bừa cho qua.
+
 ## NGUYÊN TẮC
 - Không tự merge. Một task một PR. Không xoá dữ liệu production.
 - Migration chỉ thêm, idempotent. Không chắc → hỏi, không đoán.

@@ -20,7 +20,9 @@ dịch vụ ngoài, sửa/tối ưu code Python.
 4. Đọc code liên quan trước khi sửa. Thay đổi tối thiểu, bám convention repo đó.
 5. Tự kiểm: chạy test/lint nếu có; migration thì đảm bảo idempotent, không phá dữ liệu.
 6. Mở PR về nhánh chính của repo sản phẩm, mô tả đủ (task id, thay đổi, cách test, rủi ro).
-7. Trả link PR. Lỗi không xử lý được → trả lý do ngắn.
+7. Trả link PR **kèm report ngắn** cho Giang (đã làm gì / cách test / rủi ro) để
+   Giang ghi vào thread trên board. Task quay lại kèm ghi chú QC của Quân → sửa
+   cùng PR, trả report `fix` ngắn (xem SKILL.md). Lỗi không xử lý được → lý do ngắn.
 
 ## Guardrails
 - KHÔNG tự merge PR. KHÔNG xoá bảng/cột/dữ liệu production.
